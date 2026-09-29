@@ -3,7 +3,7 @@
 ### A switch statement, but smarter and cheaper
 
 <center>
-<img src="images/hero-toast-analogy.png" alt="Illustration of overkill: using a frontier LLM for a simple classification decision" width="55%" />
+<img src="images/hero-toast-analogy.png" alt="Illustration of overkill: using a frontier LLM for a simple classification decision" width="75%" style="display:block;margin-left:auto;margin-right:auto;" />
 </center>
 
 ## You're Paying a 5-Star Chef to Toast Bread
@@ -25,7 +25,7 @@ It works, in the sense that it produces an answer. But "works" is doing a lot of
 The core issue is simpler than the tooling makes it look: **not every natural-language problem is a reasoning problem. Some are decisions.**
 
 <center>
-<img src="images/llm-as-classifier.png" alt="Diagram showing an LLM used as a closed-set classifier" width="55%" />
+<img src="images/llm-as-classifier.png" alt="Diagram showing an LLM used as a closed-set classifier" width="75%" style="display:block;margin-left:auto;margin-right:auto;" />
 </center>
 
 ## It's Just a Label, Not a Reasoned Answer
@@ -45,7 +45,7 @@ Being autoregressive by nature, classical LLMs sample one token at a time, each 
 It's like a jet engine powering a light switch: clear overkill for simple classification.
 
 <center>
-<img src="images/overkill-frontier-model.png" alt="Comparison highlighting frontier LLM cost and compute overkill for labeling" width="55%" />
+<img src="images/overkill-frontier-model.png" alt="Comparison highlighting frontier LLM cost and compute overkill for labeling" width="75%" style="display:block;margin-left:auto;margin-right:auto;" />
 </center>
 
 ## Three Problems With Using LLMs as Decision Engines
@@ -81,7 +81,7 @@ Then real organizational complexity shows up — dozens of overlapping teams and
 Teams that hit this wall often stop scaling the prompt and instead move the decision into a purpose-built classifier: faster, lighter, and designed for a fixed label set. The lesson isn't "always train a BERT model." It's that **classification and generation are different jobs**, and treating them as the same one tends to get brittle as glass on edge cases.
 
 <center>
-<img src="images/latency-confidence-edges.png" alt="Visual summary of latency, confidence, and edge-case problems with LLM decision engines" width="55%" />
+<img src="images/latency-confidence-edges.png" alt="Visual summary of latency, confidence, and edge-case problems with LLM decision engines" width="75%" style="display:block;margin-left:auto;margin-right:auto;" />
 </center>
 
 ## The Industry Already Half Knows This
@@ -117,7 +117,7 @@ The framing is the useful part, whether or not you ever touch the product:
 Because the output space is constrained by a schema, Jev avoids free-form generation and malformed structured outputs. That doesn't guarantee the decision itself is correct.
 
 <center>
-<img src="images/jev-typed-decisions.png" alt="Jev producing typed probabilistic decisions from a predefined schema" width="55%" />
+<img src="images/jev-typed-decisions.png" alt="Jev producing typed probabilistic decisions from a predefined schema" width="75%" style="display:block;margin-left:auto;margin-right:auto;" />
 </center>
 
 TypeSafe claims Jev is 20–200× faster and 40–400× cheaper than frontier LLMs on its benchmarks, at **$0.042 per million input tokens, with output currently free**. Independent tests confirm the direction of the advantage, but report substantially different multiples depending on the workload.
@@ -125,7 +125,7 @@ TypeSafe claims Jev is 20–200× faster and 40–400× cheaper than frontier LL
 TypeSafe's benchmark reports 67.8% accuracy, with performance described by the company as comparable to frontier models on its tested workflows. Don't treat that figure as an independent benchmark of general capability — and the same coverage is refreshingly upfront that Jev is the wrong tool for chat, code generation, or anything that needs a written explanation.
 
 <center>
-<img src="images/reasoning-vs-decision.png" alt="Side-by-side contrast of reasoning workloads versus decision workloads" width="55%" />
+<img src="images/reasoning-vs-decision.png" alt="Side-by-side contrast of reasoning workloads versus decision workloads" width="75%" style="display:block;margin-left:auto;margin-right:auto;" />
 </center>
 
 ## Where Jev Fits
@@ -156,7 +156,7 @@ TypeSafe's benchmark reports 67.8% accuracy, with performance described by the c
 - **Research growing:** Open benchmarks are evaluating confidence, failure modes, and alternatives.
 
 <center>
-<img src="images/limitations-overview.png" alt="Overview of Jev limitations and areas of ongoing research" width="55%" />
+<img src="images/limitations-overview.png" alt="Overview of Jev limitations and areas of ongoing research" width="75%" style="display:block;margin-left:auto;margin-right:auto;" />
 </center>
 
 ## The Bigger Idea
